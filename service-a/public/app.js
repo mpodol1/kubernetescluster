@@ -7,7 +7,7 @@ app.controller('MainController', function($scope, $http) {
         $http.get("/api?_=" + Date.now()).then(function(response) {
             $scope.messages.push(response.data);
 
-            // Make request to /metrics            
+            // Make request to /metrics and the rest          
             $http.get("/metrics?_=" + Date.now()).then(function(response) {
                 $scope.metrics = response.data;
             });
