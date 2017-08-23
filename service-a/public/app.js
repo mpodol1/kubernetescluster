@@ -17,7 +17,7 @@ app.controller('MainController', function($scope, $http) {
     $scope.sayHelloToServer();
     
     var styles = [];
-    var colors = ["black", "green", "red", "blue", "orange", "purple", "gray", "brown", "magenta"];
+    var colors = ["black", "green", "red", "blue", "orange", "yellow", "gray", "brown", "magenta"];
     var colorIndex = 0;
     
     $scope.getStyle = function(message) {
